@@ -29,8 +29,8 @@ const getDexContract = async () => {
 
 getDexContract().then( async (dex) => {   
     routes(app, dex);
-    app.listen(process.env.PORT || 3000, () => {
-        console.log('listening on port '+ (process.env.PORT || 3000));
+    app.listen(3000, () => {
+        console.log('listening on port '+ (3000));
     });
 })  
 
